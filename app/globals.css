@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-surface text-slate-100 antialiased;
+}
+
+/* Thin scrollbar for sidebar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-surface;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-surface-border rounded-full;
+}
